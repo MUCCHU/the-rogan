@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Playfair');
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+}
+a{
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tr-footer{
+  background-color: black;
+  color: white;
+  padding: 10px;
+
+}
+.tr-footer-upper{
+    border-bottom: 2px solid white;
+    padding-bottom: 30px !important;
+}
+.tr-footer-lower{
+  padding-top: 30px !important;
+}
+.tr-footer-subsection{
+  padding: 10px;
+  display: flex;
+}
+
+.tr-footer-upper-left-nav{
+  padding: 10px;
+}
+.tr-footer-upper-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tr-footer-upper-right{
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+.tr-footer-upper-right-download{
+  display: flex;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.download-text{
+  padding-left: 10px;
+}
+.tr-footer-upper-right-download{
+  margin: 0px 10px;
+}
+.tr-footer-lower-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+.circle-icon {
+    background: white;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    font-size: 25px;
+}
+.footer-logo{
+  width: 100px;
+  height: 100px;
+  margin: 0px 10px;
+}
+.tr-footer-lower-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.styleout-footer{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.serviceBG{
+  background: #ffcba4;
+  padding: 30px;
+}
+.individualSevice{
+  background-color: white;
+  width: 200px;
+  height: 160px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.individualSevice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+}
+.servicesWrapperOuter{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+.heading{
+  padding-bottom: 30px;
+}
+.heading h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: unset;
+}
+@media screen and (max-width: 680px){
+  .tr-footer-upper-left{
+    flex-direction: column;
+  }
+      .tr-footer-lower-left{
+      flex-direction: column;
+    }
+      .tr-footer-lower{
+    flex-direction: column;
+  }
+  .tr-footer-lower-right{
+    justify-content: center;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 892px){
+    .tr-footer-upper{
+      flex-direction: column;
+    }
+    .tr-footer-upper-right{
+      justify-content: center;
+      margin-top: 20px;
+    }
 }
